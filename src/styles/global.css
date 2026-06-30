@@ -84,9 +84,10 @@ section
 .map
 {
     text-transform: uppercase;
-    font-size: clamp(0.5rem, 1.3rem, 2rem);
+    font-size: clamp(0.5rem, 1.2rem, 2rem);
     color:white;
     text-align: center;
+    text-wrap: nowrap;
     width: 246px;
     overflow:hidden;
     border: solid black 0px;
