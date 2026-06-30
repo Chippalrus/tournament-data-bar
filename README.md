@@ -24,4 +24,8 @@ To do this in the OBS Browser Source, you can use browser 'Interact' to click ob
 This will pull up a window to allow you to interact with the source.
 
 # Adaptation 
-If you want to use this for other games or other uses, clone this project and host it on github pages.
+If you want to use this for other games or other uses, clone this project and host it.
+
+# The Maybe Updates/Ideas
+>> Auto polling (Polls for updates automatically)
+>> CSS gradient bar (Current background is done via image)
