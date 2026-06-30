@@ -2,8 +2,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-    site: 'https://chippalrus.dev',
-    base: '/tournament-data-bar',
+    base: '',
     fonts:
     [
         {
