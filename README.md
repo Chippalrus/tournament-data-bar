@@ -24,8 +24,8 @@ To do this in the OBS Browser Source, you can use browser 'Interact' to click ob
 This will pull up a window to allow you to interact with the source.
 
 # Adaptation 
-If you want to use this for other games or other uses, clone this project and host it.
+If you want to use this for other games or other uses, clone this project and host it. Also, because this is my second 'Github Pages' I have set 'base:' in astro.config.mjs to point as sub directory. You may want to change it to root or empty quotes.
 
 # The Maybe Updates/Ideas
->> Auto polling (Polls for updates automatically)
->> CSS gradient bar (Current background is done via image)
+> Auto polling (Polls for updates automatically)
+> CSS gradient bar (Current background is done via image)
