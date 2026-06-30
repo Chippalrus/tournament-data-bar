@@ -15,7 +15,7 @@ section
 {
     font-family: var(--font-saira),var(--font-noto-sans-kr);
     font-weight: 600;
-    font-size: clamp(0.5rem, 1.2rem, 2rem);
+    font-size: clamp(0.5rem, 1.4rem, 2rem);
     margin:0;
     padding:0;
     width: 1920px;
@@ -40,7 +40,6 @@ section
     width: 1920px;
     height: 1080px;
     display: flex;
-    gap: 6px;
 }
 
 .firstBox,.secondBox
@@ -62,7 +61,7 @@ section
 
 .bracket
 {
-    /*font-family: var(--font-saira);*/
+    text-transform: uppercase;
     text-align: center;
     width: 218px;
 }
@@ -77,18 +76,19 @@ section
 .secondBox
 {
     align-items: center;
-    width: 694px;
+    width: 668px;
     height: 44px;
-    gap: 30px;
-    /*background: #00D4FF;
-    background: linear-gradient(90deg,rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 98%, rgba(2, 0, 36, 1) 100%);*/
+    border: solid black 0px;
 }
 
 .map
 {
+    text-transform: uppercase;
+    font-size: clamp(0.5rem, 1.3rem, 2rem);
     color:white;
     text-align: center;
     width: 246px;
+    overflow:hidden;
     border: solid black 0px;
 }
 
@@ -100,13 +100,14 @@ section
     margin-right:auto;
     display: flex;
     border: solid black 0px;
-    gap: 8px;
+    gap: 6px;
 }
 
 .playerA,.playerB
 {
     display:flex;
     font-size: clamp(0.4rem,1rem,1.5rem);
+    font-weight: 900;
     overflow: hidden;
     width: 170px;
     border: solid black 0px;
@@ -115,6 +116,7 @@ section
 .a_race img,.b_race img
 {
     vertical-align: middle;
+    margin-top: 4px;
 }
 
 .a_race
