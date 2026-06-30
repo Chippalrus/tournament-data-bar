@@ -28,7 +28,7 @@ section
     background:transparent;
     margin:0;
     padding:0;
-    background-image: url('./images/UI_M.png');
+    background-image: url('/images/UI_M.png');
 }
 
 .overlay
