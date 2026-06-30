@@ -23,5 +23,5 @@ To do this in the OBS Browser Source, you can use browser 'Interact' to click ob
 
 This will pull up a window to allow you to interact with the source.
 
-# Adaption 
+# Adaptation 
 If you want to use this for other games or other uses, clone this project and host it on github pages.
