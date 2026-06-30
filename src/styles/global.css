@@ -23,12 +23,16 @@ section
     border: solid black 0px;
 }
 
-.bar-section
+.bar-image
 {
-    background:transparent;
+    position:absolute;
     margin:0;
     padding:0;
-    background-image: url('./images/UI_M.png');
+    z-index:-1;
+    max-width:1920px;
+    max-height:1080px;
+    width:1920px;
+    height:1080px;
 }
 
 .overlay
