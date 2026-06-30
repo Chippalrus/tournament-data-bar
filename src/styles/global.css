@@ -1,0 +1,156 @@
+body
+{
+    background:transparent;
+    margin:0;
+    padding:0;
+    background-image: url('UI_M.png');
+}
+
+section
+{
+    font-family: var(--font-saira),var(--font-noto-sans-kr);
+    font-weight: 600;
+    font-size: clamp(0.5rem, 1.2rem, 2rem);
+    margin:0;
+    padding:0;
+    width: 1920px;
+    height: 1080px;
+    border: solid black 0px;
+}
+
+.overlay
+{
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    gap: 6px;
+}
+
+.firstBox,.secondBox
+{
+    padding: 8px;
+    display:flex;
+    border: solid black 0px;
+    /*transform: skewX(-27deg);*/
+}
+
+.firstBox
+{
+    align-items: center;
+    width: 436px;
+    height: 26px;
+    /*background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 9%, rgba(0, 212, 255, 1) 100%);*/
+}
+
+.bracket
+{
+    /*font-family: var(--font-saira);*/
+    text-align: center;
+    width: 218px;
+}
+
+.match
+{
+    color:white;
+    text-align: center;
+    width: 218px;
+}
+
+.secondBox
+{
+    align-items: center;
+    width: 678px;
+    height: 26px;
+    gap: 30px;
+    /*background: #00D4FF;
+    background: linear-gradient(90deg,rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 98%, rgba(2, 0, 36, 1) 100%);*/
+}
+
+.map
+{
+    color:white;
+    text-align: center;
+    width: 246px;
+    border: solid black 0px;
+}
+
+.playerBoard
+{
+    align-items: center;
+    margin:0;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    border: solid black 0px;
+    gap: 8px;
+}
+
+.playerA,.playerB
+{
+    display:flex;
+    font-size: clamp(0.4rem,1rem,1.5rem);
+    overflow: hidden;
+    width: 170px;
+    border: solid black 0px;
+}
+
+.a_race img,.b_race img
+{
+    vertical-align: middle;
+}
+
+.a_race
+{
+    margin-left:6px;
+}
+
+.b_race
+{
+    margin-right:6px;
+}
+
+.a_name,.b_name
+{
+    max-width: 160px;
+}
+
+.playerA
+{
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.playerBoard
+{
+    text-align: left;
+}
+
+.playerAScore,.playerBScore,.divider
+{
+    font-size: clamp(0.5rem,1.5rem,2rem);
+}
+
+.divider
+{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.scoreBoard
+{
+    display: flex;
+    border: solid black 0px;
+}
+
+#refresh-btn
+{
+    margin:0;
+    padding:0;
+    position:absolute;
+    height: 46px;
+    width: 1158px;
+    color:transparent;
+    background:transparent;
+    border: solid 0 transparent;
+}
