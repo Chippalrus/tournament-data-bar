@@ -20,5 +20,3 @@ To do that in the OBS Browser Source, you can use browser 'Interact' to click ob
 3. Select 'Interact'
 
 This will pull up a window to allow you to interact with the source.
-
-
