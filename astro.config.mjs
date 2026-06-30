@@ -14,6 +14,14 @@ export default defineConfig({
             weights: [400, 700],
             styles: ["normal"],
         },
+                {
+            name: "Saira Extra Condensed",
+            cssVariable:"--font-saria-extra-condensed",
+            provider: fontProviders.google(),
+            subsets: ["latin"],
+            weights: [400, 600, 700],
+            styles: ["normal"],
+        },
         {
             name: "Saira",
             cssVariable:"--font-saira",

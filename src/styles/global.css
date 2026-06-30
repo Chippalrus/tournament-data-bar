@@ -2,6 +2,7 @@
 @theme inline {
   --font-saira: var(--font-saira);
   --font-noto-sans-kr: var(--font-noto-sans-kr);
+  --font-saria-extra-condensed: var(--font-saria-extra-condensed);
 }
 
 body
@@ -13,9 +14,9 @@ body
 
 section
 {
-    font-family: var(--font-saira),var(--font-noto-sans-kr);
+    font-family: var(--font-saira),var(--font-saria-extra-condensed),var(--font-noto-sans-kr);
     font-weight: 600;
-    font-size: clamp(0.5rem, 1.4rem, 2rem);
+    font-size: 1.4rem;
     margin:0;
     padding:0;
     width: 1920px;
@@ -68,6 +69,10 @@ section
 
 .match
 {
+    text-transform: uppercase;
+    font-family: var(--font-saria-extra-condensed);
+    font-size: 1.6rem;
+    font-weight:900;
     color:white;
     text-align: center;
     width: 218px;
@@ -84,7 +89,9 @@ section
 .map
 {
     text-transform: uppercase;
-    font-size: clamp(0.5rem, 1.2rem, 2rem);
+    font-family: var(--font-saria-extra-condensed);
+    font-size: 1.6rem;
+    font-weight: 900;
     color:white;
     text-align: center;
     text-wrap: nowrap;
@@ -107,7 +114,8 @@ section
 .playerA,.playerB
 {
     display:flex;
-    font-size: clamp(0.4rem,1rem,1.5rem);
+    font-family: var(--font-saria-extra-condensed);
+    font-size: 1.3rem;
     font-weight: 900;
     overflow: hidden;
     width: 170px;
@@ -117,7 +125,7 @@ section
 .a_race img,.b_race img
 {
     vertical-align: middle;
-    margin-top: 4px;
+    margin-top: 8px;
 }
 
 .a_race
