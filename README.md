@@ -4,7 +4,7 @@ This is specifically built for Starcraft: Broodwar, but project can be adapted f
 # Google Sheet setup
 This specific build/deployment requires Google Sheets to have these specific headers. (Not in any order)
 ```
-Bracket, Matchm Map, A, A_Score, B, B_Score, A_Race, B_Race
+Bracket, Match, Map, A, A_Score, B, B_Score, A_Race, B_Race
 ```
 
 # URL Parameters
