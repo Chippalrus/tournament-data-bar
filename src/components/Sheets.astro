@@ -2,8 +2,8 @@
 import { Font } from "astro:assets";
 import { Image } from 'astro:assets';
 
-const SHEET_ID    = '1WkASkIsZ_O2CmVGGGeoqI9wjykLdgGPyVqou0GEqNJQ';
-const SHEET_NAME  = 'Sheet1';
+const SHEET_ID    = '1yxS2osuAcafIArcSZuJSiZ23kwiahD192EVFSleXqjA';
+const SHEET_NAME  = 'Sheet3';
 const API_URL     = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${SHEET_NAME}`;
 
 async function getSheetData()
@@ -110,8 +110,8 @@ const { maxFontSize = 100, minFontSize = 12 } = Astro.props;
   const button = document.getElementById( 'refresh-btn' );
   const container = document.getElementById( 'data-container' );
 
-  const SHEET_ID    = '1WkASkIsZ_O2CmVGGGeoqI9wjykLdgGPyVqou0GEqNJQ';
-  const SHEET_NAME  = 'Sheet1';
+  const SHEET_ID    = '1yxS2osuAcafIArcSZuJSiZ23kwiahD192EVFSleXqjA';
+  const SHEET_NAME  = 'Sheet3';
   const API_URL     = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${SHEET_NAME}`;
 
   async function refreshData()
