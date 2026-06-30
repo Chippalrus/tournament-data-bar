@@ -10,7 +10,9 @@ Bracket, Match, Map, A, A_Score, B, B_Score, A_Race, B_Race
 # URL Parameters
 By default 'sheetid' is pointed to an empty google Sheet and 'sheetname' points to "Sheet3."
 You have to input your own Google Sheet ID and Sheet Name in order for this to function or display anything.
-```https://chippalrus.dev/tournament-data-bar?sheetid={Google Sheet ID}&?sheetname={Google Sheet Name}```
+```
+https://chippalrus.dev/tournament-data-bar?sheetid={Google Sheet ID}&?sheetname={Google Sheet Name}
+```
 
 # Operation
 In order to udpate the data on the page, simply click on the bar itself.
