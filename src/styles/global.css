@@ -84,6 +84,7 @@ section
     width: 668px;
     height: 44px;
     border: solid black 0px;
+    gap: 6px;
 }
 
 .map
@@ -95,7 +96,7 @@ section
     color:white;
     text-align: center;
     text-wrap: nowrap;
-    width: 246px;
+    width: 230px;
     overflow:hidden;
     border: solid black 0px;
 }

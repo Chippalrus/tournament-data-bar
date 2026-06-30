@@ -2,7 +2,7 @@
 import { Font } from "astro:assets";
 import { Image } from 'astro:assets';
 
-const SHEET_ID    = '1yxS2osuAcafIArcSZuJSiZ23kwiahD192EVFSleXqjA';
+const SHEET_ID    = '1WkASkIsZ_O2CmVGGGeoqI9wjykLdgGPyVqou0GEqNJQ';
 const SHEET_NAME  = 'Sheet3';
 const API_URL     = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${SHEET_NAME}`;
 
@@ -37,13 +37,6 @@ async function getSheetData()
 }
 
 const data = await getSheetData();
-
-interface Props {
-  maxFontSize?: number;
-  minFontSize?: number;
-}
-
-const { maxFontSize = 100, minFontSize = 12 } = Astro.props;
 ---
 <section id="data-container">
   <img class="bar-image" src="./images/UI_S2.png">
@@ -59,7 +52,7 @@ const { maxFontSize = 100, minFontSize = 12 } = Astro.props;
 
         <div class="playerBoard">
           <div class="playerA">
-            <span class="a_name" data-max={maxFontSize} data-min={minFontSize}>{data[0].A}</span>
+            <span class="a_name">{data[0].A}</span>
             <div class="a_race">
             {(() => { if( data[0].A_Race.toLowerCase() == 'terran' ) 
                 {
@@ -99,7 +92,7 @@ const { maxFontSize = 100, minFontSize = 12 } = Astro.props;
               }
             })()}
             </div>
-            <span class="b_name" data-max={maxFontSize} data-min={minFontSize}>{data[0].B}</span>
+            <span class="b_name">{data[0].B}</span>
           </div>
         </div>
       </div>
@@ -111,9 +104,14 @@ const { maxFontSize = 100, minFontSize = 12 } = Astro.props;
   const button = document.getElementById( 'refresh-btn' );
   const container = document.getElementById( 'data-container' );
 
-  const SHEET_ID    = '1yxS2osuAcafIArcSZuJSiZ23kwiahD192EVFSleXqjA';
+  const SHEET_ID    = '1WkASkIsZ_O2CmVGGGeoqI9wjykLdgGPyVqou0GEqNJQ';
   const SHEET_NAME  = 'Sheet3';
-  const API_URL     = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${SHEET_NAME}`;
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const sheetId = urlParams.get('SheetID') || urlParams.get('sheetid') || SHEET_ID;
+  const sheetName = urlParams.get('SheetName') || urlParams.get('sheetname') || SHEET_NAME;
+
+  const apiURL = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=${sheetName}`;
 
   async function refreshData()
   {
@@ -122,7 +120,7 @@ const { maxFontSize = 100, minFontSize = 12 } = Astro.props;
     button.setAttribute( 'disabled', 'true' );
 
     try {
-      const response = await fetch( API_URL );
+      const response = await fetch( apiURL );
       const text = await response.text();
       const jsonString = text.substring( text.indexOf( "{" ), text.lastIndexOf( "}" ) + 1 );
       const json = JSON.parse( jsonString );
@@ -206,6 +204,7 @@ const { maxFontSize = 100, minFontSize = 12 } = Astro.props;
       button.removeAttribute( 'disabled' );
     }
   }
+  document.addEventListener('DOMContentLoaded', refreshData);
 
   button?.addEventListener( 'click', refreshData );
 </script>
