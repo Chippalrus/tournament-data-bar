@@ -62,15 +62,15 @@ const { maxFontSize = 100, minFontSize = 12 } = Astro.props;
             <div class="a_race">
             {(() => { if( data[0].A_Race.toLowerCase() == 'terran' ) 
                 {
-                    return <img src="/images/terran.png">
+                    return <img src="./images/terran.png">
                 }
                 else if( data[0].A_Race.toLowerCase() == 'protoss' ) 
                 {
-                    return <img src="/images/protoss.png">
+                    return <img src="./images/protoss.png">
                 }
                 else if( data[0].A_Race.toLowerCase() == 'zerg'  ) 
                 {
-                    return <img src="/images/zerg.png">
+                    return <img src="./images/zerg.png">
                 }
             })()}
             </div>
@@ -86,15 +86,15 @@ const { maxFontSize = 100, minFontSize = 12 } = Astro.props;
             <div class="b_race">
             {(() => { if( data[0].B_Race.toLowerCase() == 'terran' ) 
               {
-                  return <img src="/images/terran.png">
+                  return <img src="./images/terran.png">
               }
               else if( data[0].B_Race.toLowerCase() == 'protoss' ) 
               {
-                  return <img src="/images/protoss.png">
+                  return <img src="./images/protoss.png">
               }
               else if( data[0].B_Race.toLowerCase() == 'zerg'  ) 
               {
-                  return <img src="/images/zerg.png">
+                  return <img src="./images/zerg.png">
               }
             })()}
             </div>
@@ -148,17 +148,17 @@ const { maxFontSize = 100, minFontSize = 12 } = Astro.props;
       
       switch( data[0].A_Race.toLowerCase() )
       {
-        case 'terran': a_Race = '/images/terran.png'; break;
-        case 'protoss': a_Race = '/images/protoss.png'; break;
-        case 'zerg': a_Race = '/images/zerg.png'; break;
+        case 'terran': a_Race = './images/terran.png'; break;
+        case 'protoss': a_Race = './images/protoss.png'; break;
+        case 'zerg': a_Race = './images/zerg.png'; break;
         default:break;
       }
 
       switch( data[0].B_Race.toLowerCase() )
       {
-        case 'terran': b_Race = '/images/terran.png'; break;
-        case 'protoss': b_Race = '/images/protoss.png'; break;
-        case 'zerg': b_Race = '/images/zerg.png'; break;
+        case 'terran': b_Race = './images/terran.png'; break;
+        case 'protoss': b_Race = './images/protoss.png'; break;
+        case 'zerg': b_Race = './images/zerg.png'; break;
         default:break;
       }
 
