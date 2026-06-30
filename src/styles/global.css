@@ -54,8 +54,8 @@ section
 .firstBox
 {
     align-items: center;
-    width: 436px;
-    height: 26px;
+    width: 454px;
+    height: 44px;
     /*background: #020024;
     background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 9%, rgba(0, 212, 255, 1) 100%);*/
 }
@@ -77,8 +77,8 @@ section
 .secondBox
 {
     align-items: center;
-    width: 678px;
-    height: 26px;
+    width: 694px;
+    height: 44px;
     gap: 30px;
     /*background: #00D4FF;
     background: linear-gradient(90deg,rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 98%, rgba(2, 0, 36, 1) 100%);*/

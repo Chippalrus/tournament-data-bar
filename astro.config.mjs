@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
     site: 'https://chippalrus.dev',
-    base: '/tournament-data-bar',
+    base: '/tournament-data-bar/',
     fonts:
     [
         {
